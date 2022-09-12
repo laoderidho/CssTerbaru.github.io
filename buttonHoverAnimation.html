@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            --background-color: #E3E3E3;
+            --border-size: 2px;
+            --accent-color : #0AF;
         }
         body{
             display: flex;
@@ -29,9 +32,7 @@
             position: relative;
             cursor: pointer;
             
-            --background-color: #E3E3E3;
-            --border-size: 2px;
-            --accent-color : #0AF;
+           
         }
         .btn.btn-border-pop::before {
             content: '';
@@ -109,6 +110,5 @@
     <button class="btn btn-border-pop" >Border Pop</button>
     <button class="btn btn-background-slide" >Background Slide</button>
     <button class="btn btn-background-circle">Background Circle</button>
-    <button class="btn btn-border-underline">Border Underline</button>
 </body>
 </html>
