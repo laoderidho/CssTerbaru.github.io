@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <style>
+        .Tes1{
+            width: 300px; /*Panjang dari kiri ke kanan dalam tampilan*/
+            height: 300px; /*Tinggi dari atas ke bawah dalam tampilan display*/
+            background-color: red;
+            background-image: url(myPhoto.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover; /*Berfungsi untuk membuat background dalam image bisa pas ukurannya*/
+            border-radius : 50% 50% 50% 50%;
+            text-align: center;
+            line-height: 200px;
+        }
+        .tes2{
+            width: 300px; /*Panjang dari kiri ke kanan dalam tampilan*/
+            height: 300px; /*Tinggi dari atas ke bawah dalam tampilan display*/
+            background-color: red;
+            border-radius : 50%;
+            text-align: center;
+            line-height: 200px;
+            overflow: hidden; /*Overflow artinya kelebihan ruang dan hidden berfungsi menghilangkannya*/
+        }
+        .tes2 img{
+            width: 300px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- border radius berfungsi sebagai memberi ketumpulan pada div / property yang di panggil 
+    kita juga bisa memberikan border radius ke dalam satu sudut saja 
+    border-top-right-radius: //memberikan border radius ke sudut atas kanan
+    border-top-left-radius: //memberikan border radius ke sudut atas kiri
+    border-bottom-left-radius // memberikan border radius ke sudut bawah kiri
+    border-bottom-right-radius //memberikan border radius ke sudut bawah kanan
+
+    //untuk cara simple nya bisa juga
+    border radius searah jarum jam pemanggilannya berawal dari atas kiri
+    contoh
+
+    border-radius : 20% 0 20% 0;
+    -->
+    <div class="Tes1">
+        <p>Hello World</p>
+    </div>
+    <div class="tes2">
+        <img src="myPhoto.jpeg" alt="Ini Foto Aing">
+    </div>
+</body>
+</html>
