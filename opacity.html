@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(/image/iniGambar.jpg);
+        }
+        div.satu{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            opacity: .5; 
+             /* cara simple dalam opacity adalah .3 seperti di atas artinya . melambangkan ada angka 0 di depan koma
+            semakin kecil opacity semakin besar transparansi nya 
+             */
+        }
+        div.dua{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            right: -50px;
+            bottom: -50px;
+            opacity: .5;
+            /* ini mengambil tranparansi default dari parent dan jika menambahkan opacity walau opacity dari parent dan child sama tapi child lebih tranparan karena nilai awal tranparansi child mengikuti parent */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="satu">
+        <div class="dua">
+
+        </div>
+    </div>
+</body>
+</html>
