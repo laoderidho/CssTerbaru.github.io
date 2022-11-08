@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: .5s; /*Ini adalah keadaan awal kalau memakai transistion harus keadaan awalnya yang di beri syntax transition dan jika ada perubahan bentuk dari class ini maka akan berubah secara mulus seperti bergerak*/
+            /* 1s di atas menandakan waktu transition */
+        }
+        .kotak:hover{
+            transform: rotate(45deg);
+            border-radius: 30%;
+            opacity: .75;
+        }
+        .kotak1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+        .container:hover .kotak1{ /*Jika container di hover maka .kotak akan di jalankan perintah cssnya */
+            margin-left: 300px;
+            transform: rotate(180deg);
+            border-radius: 100%;
+        }
+        .kotak2{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin-top: 5px;
+            transition: transform 1s;
+            /* transition di atas hanya akan ter animasi ke pada syntac transform saja */
+        }
+        .kotak2:hover{
+            transform: rotate(180deg);
+            background-color: red;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="kotak"></div>
+
+    <div class="container">
+        <!-- di sini di taruh pembungkus agar mencegah bug jika di hover -->
+        <div class="kotak1">
+
+        </div>
+    </div>
+    <div class="kotak2">
+
+    </div>
+</body>
+</html>
