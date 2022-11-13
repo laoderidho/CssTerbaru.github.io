@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            
+        }
+        .kotak1{transition: 3s ease;}
+        .kotak2{transition: 3s ease-in;}
+        .kotak3{transition: 3s ease-in-out;}
+        .kotak4{transition: 3s ease-out;}
+        .kotak5{transition: 3s linear;}
+        .kotak6{transition: 3s cubic-bezier(0.24, -0.35, 0.78, 1.46);}
+        .container:hover .kotak{
+            margin-left: 720px;
+            background-color: blue;
+            transform: rotate(720deg);
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak kotak1"> ease</div>
+        <br>
+        <div class="kotak kotak2">ease in</div>
+        <br>
+        <div class="kotak kotak3">ease in out</div>
+        <br>
+        <div class="kotak kotak4"> ease out</div>
+        <br>
+        <div class="kotak kotak5">Linear</div>
+        <br>
+        <div class="kotak kotak6">cubic bezier</div>
+    </div>
+    
+</body>
+</html>

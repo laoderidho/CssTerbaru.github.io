@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{
+            margin: 20px;
+        }
         .kotak{
             width: 100px;
             height: 100px;
@@ -32,7 +35,6 @@
             width: 100px;
             height: 100px;
             background-color: aquamarine;
-            margin-top: 5px;
             transition: transform 1s;
             /* transition di atas hanya akan ter animasi ke pada syntac transform saja */
         }
@@ -40,6 +42,16 @@
             transform: rotate(180deg);
             background-color: red;
 
+        }
+        .kotak3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: .5s;
+        }
+        .kotak3:hover{
+            transform: rotate(180deg);
+            border-radius: 100%;
         }
     </style>
     <title>Document</title>
@@ -54,6 +66,9 @@
         </div>
     </div>
     <div class="kotak2">
+
+    </div>
+    <div class="kotak3">
 
     </div>
 </body>
