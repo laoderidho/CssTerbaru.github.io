@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            border: 4px solid black;
+        }
+        .kotak4{
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+        }
+        #tes1{
+            border: 1px solid black;
+            display: inline;
+            position: relative;
+            left: 12px;
+        }
+        #tes2{
+            display: inline;
+        }
+        #tes3{
+            border: 1px solid black;
+            display: inline;
+        }
+        #tes4{
+            display: inline;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .kotak5{
+            width: 300px;
+            height: 300px;
+            position: relative;   
+        }
+        .tes5{
+            position: relative;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <br>
+    <div class="kotak4">
+        <p id="tes1">Ini Posisi awal</p>
+        <h1 id="tes2">Ini tes1</h1>
+    </div>
+    <div class="kotak5">
+        <p id="tes3">Ini adalah benaran text</p>
+            <h1 id="tes4">Ini adalah text</h1>
+    </div>
+    <!-- Position relative akan membuat posisi komponen kita lebih fleksibel artinya kita bisa menempatkan
+        posisi component kita di mana saja tanpa mempengaruhi elemen sekitar kita 
+        position relative punya property tambahan yaitu left, rigth, top, bottom
+
+        position absolute hampir sama dengan relative tapi absolute akan mempengaruhi elemen sekitar 
+        karena position absolute tidak memiliki flow / dimensi tetap dan akan selalu mengikuti window 
+        untuk mengakalinya maka element parent harus position relative untuk mengurung posistion relative
+
+        position fixed akan membuat posisi component di mana saja dalam window dan fixed tidak bisa di atur
+        / bebas ke mana saja di dalam window walau di kurung dengan parent juga fixed akan di situ terus menerus
+        tanpa ada perubahan walau di scrool
+    -->
+</body>
+</html>
